@@ -17,7 +17,7 @@ struct Node{
 	char* name;
 }b[30],a[50],s[10];
 
-int Randint(int l,int r){
+int Randint(int l,int r){// this function can get a number in [l,r] (which contains the border.) 
     static std::mt19937 mt(time(NULL));
     return std::uniform_int_distribution<int>(l,r)(mt);
 }
